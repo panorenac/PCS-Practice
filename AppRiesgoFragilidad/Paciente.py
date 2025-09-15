@@ -23,8 +23,8 @@ LISTA_PACIENTES = []
         LISTA_PACIENTES.append(paciente)
  '''
 
-p1 = Paciente(1027, "Carolina Pérez", 69, 3102004534,"M1","890901826-2")
-p2 = Paciente(1028, "Carlos Castro", 75, 3156782399,"M1","890906347-9")
+p1 = Paciente(1027, "Leticia Londoño", 75, 3102004534,"M1","890901826-2")
+p2 = Paciente(1028, "Ottoniel Noreña", 68, 3156782399,"M1","890906347-9")
 LISTA_PACIENTES = [p1, p2]
 
 def imprimirPaciente():
