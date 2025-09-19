@@ -16,7 +16,7 @@ LISTA_PACIENTES = []
         nombre = input("Ingrese el nombre del paciente: ")
         edad = int(input("Ingrese la edad del paciente: "))
         celular = int(input("Ingrese el celular del paciente: "))
-        referencia = input("Selecciona la referencia del reloj Inteligente ")
+        referencia = input("Seleccione la referencia del reloj Inteligente: ")
         nit = int(input("Ingrese el nit del Hospital: "))
         print ("")
         paciente = PACIENTE(id, nombre, edad, celula, referencia, nit)
