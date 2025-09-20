@@ -10,8 +10,6 @@ from RelojInteligente import imprimirRelojInteligente
 # Condiciones iniciales y parámetros globales
 TIEMPO_SIMULACION = 72  # Horas
 UMBRAL = 0.7  # Probabilidad en el rango [0 - 1]
-
-# Variables globales
 TIEMPO = 0  # Horas
 MARCA_TIEMPO = "Siga"  # Puede ser "Siga" o "Pare"
 ESTADOSENSOR_RITMOCARDIACO = "Activo"  # Activo o Inactivo
@@ -51,7 +49,7 @@ def RITMOCARDIACO_APARECE():
         valor = random.randint(50, 120)  # Ritmo aleatorio
         riesgo = "Alto" if valor > 100 else "Bajo"
 
-        # Actualizar métricas
+        # Actualizar KPI
         if TIEMPO > 1:  # Evita dividir por 0
             PROMEDIO_RITMOCARDIACO = ((PROMEDIO_RITMOCARDIACO * (TIEMPO - 1)) + valor) / TIEMPO
 
