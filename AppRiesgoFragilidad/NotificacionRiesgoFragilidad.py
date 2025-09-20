@@ -110,7 +110,7 @@ def main():
     plt.ylabel("Ritmo Cardiaco (lpm)")
     plt.grid(True)
 
-    # Si deseas, puedes también graficar la tasa de riesgo de fragilidad
+    # Graficar la tasa de riesgo de fragilidad
     for tiempo, ritmo, riesgo in zip(tiempos, ritmos, riesgos):
         color = 'red' if riesgo == 'Alto' else 'green'
         plt.scatter(tiempo, ritmo, color=color, s=100, label=f"Riesgo: {riesgo}" if tiempo == tiempos[0] else "")
