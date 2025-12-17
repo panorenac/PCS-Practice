@@ -50,7 +50,7 @@ def RITMOCARDIACO_APARECE():
         riesgo = "Alto" if valor > 100 else "Bajo"
 
         # Actualizar KPI
-        if TIEMPO > 1:  # Evita dividir por 0
+        if TIEMPO >= 1:  # Evita dividir por 0
             PROMEDIO_RITMOCARDIACO = ((PROMEDIO_RITMOCARDIACO * (TIEMPO - 1)) + valor) / TIEMPO
 
         if riesgo == "Alto":
